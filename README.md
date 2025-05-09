@@ -29,6 +29,4 @@ A lógica implementada envolve:
 Desenvolvido por:
 
 - **Bianca Leão**
-- **Daniel Lemos**
-
 ---
