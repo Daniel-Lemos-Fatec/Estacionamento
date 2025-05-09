@@ -49,8 +49,8 @@ public class Pilha {
     }
     
     public void print() {
-        for (int i = topo; i >= 0; i--) {
-            System.out.println(elementos[i]);
+        for (int i = 0; i <= topo; i++) {
+            System.out.println((i+1)+": "+elementos[i]);
         }
     }
 }
