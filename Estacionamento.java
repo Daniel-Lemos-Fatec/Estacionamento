@@ -25,6 +25,7 @@ public class Estacionamento {
                 System.out.println(" (_____)  ");
                 System.out.println("  |   |   ");
 
+
                 System.out.println("BOLOLO HAHA BOLOLO HAHAHAHA");
                 System.out.println("Por favor, verifique se o formato da entrada está correto!");
                 System.out.println("Digite '0' se deseja adicionar um carro ao estacionamento.");
@@ -36,9 +37,18 @@ public class Estacionamento {
             if (partes.length == 2) {
                 String tipoMovimento = partes[0];
                 String placa = partes[1];
+                if (tipoMovimento.equals("0")) {
+                    if (estacionamento.contains(placa)) {
+                        System.out.println("Carro " + placa + " já está no estacionamento.");
+                    } else if (!estacionamento.isFull()) {
+                        estacionamento.push(placa);
+                        System.out.println("Carro " + placa + " entrou no estacionamento.");
+                    } else {
+                        System.out.println("Carro " + placa + " não entrou: estacionamento cheio.");
+                    }
+                }    
             }
 
-            // se o digitado for 0 e a pilha nao estiver cheia adiciona essa placa
             // se o digitado for 1 remover ate chegar na placa digitada e ir contando as
             // manobras
         }

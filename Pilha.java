@@ -39,6 +39,15 @@ public class Pilha {
         return topo + 1;
     }
 
+    public boolean contains(String placa) {
+        for (int i = 0; i <= topo; i++) {
+            if (elementos[i].equals(placa)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
     public void print() {
         for (int i = topo; i >= 0; i--) {
             System.out.println(elementos[i]);
